@@ -51,24 +51,3 @@ class AlexaBot(Client):
         else:
             self.name = get_me.first_name
         LOGGER(__name__).info(f"MusicBot Started as {self.name}")
-
-        from pyrogram import Client
-from pyrogram.errors import UserNotParticipant
-
-class YourBot(Client):
-    async def on_start(self, _):
-        try:
-            chat_member = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
-            if chat_member.status == "administrator":
-                print("Bot is an administrator in the group. Proceed with your logic.")
-                # Add your main bot logic here
-            else:
-                print("Bot is not an administrator in the group. Please promote it.")
-        except UserNotParticipant:
-            print("Bot is not a participant in the group. Add the bot to the group.")
-
-# Initialize your bot
-bot = YourBot("my_bot", bot_token="YOUR_BOT_TOKEN")
-
-# Start the bot
-bot.run()
