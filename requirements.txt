@@ -24,4 +24,4 @@ youtube-search-python==1.6.6
 git+https://github.com/yt-dlp/yt-dlp@master
 numpy==1.26.0
 ffmpeg-python
-yt-dlp==2023.9.24
+yt-dlp==2023.10.7
