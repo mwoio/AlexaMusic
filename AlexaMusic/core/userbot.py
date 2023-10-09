@@ -38,19 +38,19 @@ class Userbot(Client):
         self.three = Client(
             api_id=config.API_ID,
             api_hash=config.API_HASH,
-            session_name=str(config.STRING3),
+            name=str(config.STRING3),
             no_updates=True,
         )
         self.four = Client(
             api_id=config.API_ID,
             api_hash=config.API_HASH,
-            session_name=str(config.STRING4),
+            name=str(config.STRING4),
             no_updates=True,
         )
         self.five = Client(
             api_id=config.API_ID,
             api_hash=config.API_HASH,
-            session_name=str(config.STRING5),
+            name=str(config.STRING5),
             no_updates=True,
         )
 
