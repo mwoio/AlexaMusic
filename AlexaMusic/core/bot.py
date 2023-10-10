@@ -11,17 +11,17 @@
 import sys
 from pyrogram import Client, errors
 from pyrogram.enums import ChatMemberStatus, ParseMode
-
+import alexaMusicbot
 import config
 
 from ..logging import LOGGER
 
 
-class Alexabot(Client):
+class AlexaMusicbot(Client):
     def __init__(self):
         LOGGER(__name__).info(f"Starting Bot...")
         super().__init__(
-            name="AnonXMusic",
+            name="AlexaMusicbot",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
